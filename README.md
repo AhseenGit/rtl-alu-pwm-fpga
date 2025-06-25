@@ -60,7 +60,7 @@ All PWM outputs are observable on LED pins and via SignalTap.
 
 ---
 
-## 🛠 Tools & Hardware Used
+## Tools & Hardware Used
 
 | Tool               | Purpose                                           |
 |--------------------|---------------------------------------------------|
