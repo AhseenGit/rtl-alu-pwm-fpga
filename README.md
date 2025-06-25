@@ -1,21 +1,21 @@
-# ⚙️ RTL ALU + PWM FPGA Project
+#  RTL ALU + PWM FPGA Project
 
 This project implements a structured digital system in Verilog RTL, targeting the Intel DE10-Standard FPGA board. The system includes a modular ALU (arithmetic, logic, shifter) and a PWM generator with three operating modes. It supports simulation, synthesis, and real hardware verification using industry-standard tools.
 
 ---
 
-## 🧭 System Overview
+##  System Overview
 
-- ✅ Modular ISA-driven ALU
-- ✅ PWM Generator with 3 modes
-- ✅ Unified control signal interface via `ALUFN[4:0]`
-- ✅ Real hardware test on DE10-Standard FPGA
-- ✅ RTL simulation in ModelSim
-- ✅ SignalTap-based internal debugging
+- Modular ISA-driven ALU
+- PWM Generator with 3 modes
+- Unified control signal interface via `ALUFN[4:0]`
+- Real hardware test on DE10-Standard FPGA
+- RTL simulation in ModelSim
+- SignalTap-based internal debugging
 
 ---
 
-## 🔀 Functional Unit Control (`ALUFN[4:3]`)
+## Functional Unit Control (`ALUFN[4:3]`)
 
 The system selects between functional blocks using the high two bits of a 5-bit `ALUFN` control signal:
 
@@ -30,9 +30,9 @@ The system selects between functional blocks using the high two bits of a 5-bit 
 
 ---
 
-## 🧩 Module Descriptions
+## Module Descriptions
 
-### 🔷 ALU Subsystem
+### ALU Subsystem
 
 Split into three functional RTL modules:
 
@@ -44,7 +44,7 @@ Output is determined based on `ALUFN[4:0]` and visible via LEDs and HEX displays
 
 ---
 
-### 🔶 PWM Generator
+### PWM Generator
 
 Implements 3 operating modes:
 
@@ -69,13 +69,13 @@ All PWM outputs are observable on LED pins and via SignalTap.
 | **SignalTap II**   | Internal FPGA logic probing (live debugging)      |
 | **DE10-Standard**  | Target hardware for real FPGA deployment          |
 
-📌 *Timing reports were generated automatically by Quartus. No manual slack/path optimizations were applied in this phase.*
+*Timing reports were generated automatically by Quartus. No manual slack/path optimizations were applied in this phase.*
 
 ---
 
-## 🧪 Simulation & Test Instructions
+## Simulation & Test Instructions
 
-### 🖥 Simulation (ModelSim)
+### Simulation (ModelSim)
 
 1. Open ModelSim
 2. Compile testbenches and RTL modules:
