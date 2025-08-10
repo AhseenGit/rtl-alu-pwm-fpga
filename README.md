@@ -82,9 +82,9 @@ All PWM outputs are observable on LED pins and via SignalTap.
    ```bash
    vsim work.top_tb
   
-##Team 
+## Team 
 Ahseen & Aram
 
-##contact
+## contact
 Feel free to reach out:
 Azazmehhus@gmail.com
