@@ -80,5 +80,11 @@ All PWM outputs are observable on LED pins and via SignalTap.
 1. Open ModelSim
 2. Compile testbenches and RTL modules:
    ```bash
-   vsim work.alu_tb
-   vsim work.pwm_tb
+   vsim work.top_tb
+  
+##Team 
+Ahseen & Aram
+
+##contact
+Feel free to reach out:
+Azazmehhus@gmail.com
